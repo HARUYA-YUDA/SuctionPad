@@ -27,6 +27,8 @@ double getRawdata(int pin_num){
     return data;
 }
 
+//You need to check if it is correct.
+//It may not be correct
 double getPressure(int pin_num){
     float data;
     // Get data
