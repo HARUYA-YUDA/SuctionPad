@@ -1,19 +1,17 @@
 # vacuum_pressure
 
 ## Download
----
-###Download it wherever you want
-###It's recommended to put in src/
+ - Download it wherever you want
+ - It's recommended to put in src/
 
 ## How to Introduce Demo
-----
-###Connect robotic arm through U2D2
-###Connect pressure sensor through arduino
+ - Connect robotic arm through U2D2
+ - Connect pressure sensor through arduino
 
-###Wake mikata arm up by launch file
+##Wake mikata arm up by launch file
 $ roslaunch mikata_arm_bringup bringup.launch
 
-###Run the code for pressure sensor by arduinoIDE
+##Run the code for pressure sensor by arduinoIDE
 $ /opt/arduino-1.8.7/arduino
 You might need to put the command two times.
 $ rosrun rosserial_python serial_node.py /dev/ttyACM0
@@ -23,7 +21,6 @@ $ rosrun mikata_suck demo
 
 
 ## How to Work only demo.ino
-----
 Check where is the arduino in your computer
 $ ls /dev/ttyACM*
 - Run the code by arduinoIDE
@@ -33,7 +30,7 @@ $ rosrun rosserial_python serial_node.py /dev/ttyACM0
 ## Sensor
 ----
 VUSd11-6US
-###Feature
+ - Feature
 It answer nine 0V in 10 answers when it vacuum.
  - Like followings
 '''
