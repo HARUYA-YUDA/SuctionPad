@@ -1,16 +1,21 @@
 # vacuum_pressure
 
+## Download
+---
+###Download it wherever you want
+###It's recommended to put in src/
+
 ## How to Introduce Demo
 ----
-###connect robotic arm through U2D2
-###connect pressure sensor through arduino
+###Connect robotic arm through U2D2
+###Connect pressure sensor through arduino
 
-###wake mikata arm up by launch file
+###Wake mikata arm up by launch file
 $ roslaunch mikata_arm_bringup bringup.launch
 
-###run the code for pressure sensor by arduinoIDE
+###Run the code for pressure sensor by arduinoIDE
 $ /opt/arduino-1.8.7/arduino
-you might need to put the command two times.
+You might need to put the command two times.
 $ rosrun rosserial_python serial_node.py /dev/ttyACM0
 $ rostopic echo /pressure_raw_data
 $ rosservice call /enable_all
@@ -19,23 +24,37 @@ $ rosrun mikata_suck demo
 
 ## How to Work only demo.ino
 ----
-check where is the arduino in your computer
+Check where is the arduino in your computer
 $ ls /dev/ttyACM*
-- run the code by arduinoIDE
+- Run the code by arduinoIDE
 $ roscore
 $ rosrun rosserial_python serial_node.py /dev/ttyACM0
 
 ## Sensor
 ----
-VUS11-6US
+VUSd11-6US
 ###Feature
 It answer nine 0V in 10 answers when it vacuum.
+ - Like followings
+'''
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+'''
 
 
 ## Environment
 ---
  - Allienware 13
  - ArduinoUNO
+ - mikata arm
 ```
 Ubuntu16.04
 ROS, kinetic
