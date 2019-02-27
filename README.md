@@ -28,7 +28,6 @@ Check where is the arduino in your computer
   $ rosrun rosserial_python serial_node.py /dev/ttyACM0  
 
 ## Sensor
-----
 VUSd11-6US
  - Feature  
 It answer nine 0V in 10 answers when it vacuum.  
@@ -47,7 +46,6 @@ It answer nine 0V in 10 answers when it vacuum.
 ```
 
 ## Environment
----
  - Allienware 13
  - ArduinoUNO
  - mikata arm
