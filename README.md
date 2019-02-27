@@ -5,15 +5,15 @@
  - It's recommended to put in src/
 
 ## How to Introduce Demo
- - Connect robotic arm through U2D2
- - Connect pressure sensor through arduino
+1. Connect robotic arm through U2D2
+1. Connect pressure sensor through arduino
 
-## Wake mikata arm up by launch file
+1. Wake mikata arm up by launch file
   $ roslaunch mikata_arm_bringup bringup.launch
 
-## Run the code for pressure sensor by arduinoIDE
+1. Run the code for pressure sensor by arduinoIDE
   $ /opt/arduino-1.8.7/arduino
-You might need to put the command two times.
+  You might need to put the command two times.
   $ rosrun rosserial_python serial_node.py /dev/ttyACM0
   $ rostopic echo /pressure_raw_data
   $ rosservice call /enable_all
