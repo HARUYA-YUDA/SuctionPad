@@ -24,10 +24,8 @@
 Check where is the arduino in your computer  
   $ ls /dev/ttyACM*  
 - Run the code by arduinoIDE  
-- code is at ws_yuda/src/vacuum_pressure/src/vacuum_pressure/vacuum_pressure.ino 
-  $ cd /opt  
-  $ ./arduino-1.8.7/arduino
-
+  $ /opt/arduino-1.8.7/arduino  
+  You might need to put the command two times.  
   $ roscore  
   $ rosrun rosserial_python serial_node.py /dev/ttyACM0  
 
