@@ -1,7 +1,7 @@
-#�d���ق�t����������@
+# 電磁弁を付け加える方法
 
 ![SuctionPart](https://github.com/HARUYA-YUDA/vacuum_pressure/blob/master/SuctionPart.jpg)
 
-1. �ʐ^�̂悤�ɔz��
-1. �\���m�C�h�o���u�̂Ƃ���̓v���O�����������Ă��Ȃ��̂ŒN��������
- - vacuum_pressure.ino�ɏ���������B
+1. 写真のように配管
+1. ソレノイドバルブのところはプログラムを書いていないので誰かが書く
+ - vacuum_pressure.inoに書き加える。
